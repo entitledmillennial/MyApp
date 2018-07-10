@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/black">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/gif_imageview"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/mid_relativelayout"
+            android:background="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/gif_imageview">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressbar"
+            android:theme="@style/AppTheme.ProgressBarTheme"
+            android:indeterminate="true"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_activity_button"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/button_proceed"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="25dp"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/share_button"
+            android:src="@drawable/share_button"
+            android:background="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/message_textview"
+            android:textColor="@color/colorPrimary"
+            android:scrollbars="vertical"
+            android:layout_below="@id/mid_relativelayout"
+            android:layout_above="@id/welcomeactivity_internet_textview"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="start|top" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@+id/welcomeactivity_internet_textview"
+            android:text="@string/internet_welcomepage"
+            android:textColor="@color/red"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_above="@id/welcome_activity_banner_ad"
+            android:layout_marginBottom="10dp"/>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/welcome_activity_banner_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/welcome_banner_id" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="51dp"
+        android:id="@+id/no_internet_imageview"
+        android:src="@drawable/no_internet"
+        android:background="@color/black"
+        android:visibility="gone" />
+
+</android.support.design.widget.CoordinatorLayout>

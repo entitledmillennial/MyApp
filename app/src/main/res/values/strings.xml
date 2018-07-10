@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="developer_key"></string><!--your youtube api developer key-->
+    <string name="json_url_1"></string><!--first url of your remote json file-->
+    <string name="json_url_2"></string><!--second url of your remote json file-->
+    <string name="playstore_url_without_id">https://play.google.com/store/apps/details?id=</string>
+
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="welcome_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="album_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="starlet_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="button_crash_ok">OK</string>
+    <string name="button_proceed">Proceed to the \n main area</string>
+    <string name="email_address"></string><!--your email address-->
+    <string name="feedback_email_subject">Feedback for MyApp.</string>
+    <string name="email_app_not_found">It appears that there is no email app installed.</string>
+    <string name="share_title">Share this app with people!</string>
+    <string name="share_message">Check out this app - </string>
+    <string name="reload_advice">Reload if this takes too long!</string>
+    <string name="placeholder_message">The developer message cannot be retrieved at the moment, please check if your device has internet access.
+            If your internet connection is fine then there maybe some problem with the server. If that is the case please feel free to bring it to our attention
+            by sending us an email at (enter mail). We will promptly look into the matter and take appropriate actions.</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="application_crash_message">Exiting the app due to an unexpected error.</string>
+    <string name="checkbox_text">Email us regarding this incident</string>
+    <string name="crash_email_subject">Application Crash!</string>
+
+    <string name="internet_welcomepage">....................................Plese check the internet connection....................................</string>
+    <string name="internet_mainactivity">....................................Please check the internet connection and click the refresh button....................................</string>
+</resources>
+
+
